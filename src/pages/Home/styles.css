@@ -1,0 +1,38 @@
+@import "../../styles/variables.css";
+
+.chart {
+  border: solid 1px var(--color-light-gray);
+  height: 230px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.home-choose-date {
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.home-choose-date li {
+  display: flex;
+  align-items: center;
+
+  padding: 0 5px;
+  margin-bottom: 5px;
+}
+
+.home-choose-date li label {
+  margin-right: 10px;
+  width: 130px;
+}
+
+.home-choose-date li button {
+  margin-left: 10px;
+}
+
+.home-choose-date li span {
+  border: solid 1px var(--color-light-gray);
+  border-radius: 5px;
+  padding: 3px 10px;
+  min-width: 200px;
+}

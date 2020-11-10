@@ -1,0 +1,8 @@
+.text {
+  line-height: 1.8rem;
+  font-size: 18px;
+}
+
+.text a {
+  font-weight: bold;
+}

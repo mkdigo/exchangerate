@@ -1,0 +1,14 @@
+:root {
+  --header-height: 70px;
+  --container-width: 1180px;
+  --container-padding: 0 10px;
+
+  --color-background: #fbfbfb;
+  --color-orange: #f6aa7f;
+  --color-yellow: #f6e67f;
+  --color-pink: #f67f90;
+  --color-blue: #2b95d9;
+  --color-light-gray: #e2e2e2;
+  --color-medium-gray: #bcbcbc;
+  --color-dark-gray: #969696;
+}

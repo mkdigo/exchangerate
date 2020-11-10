@@ -1,0 +1,25 @@
+@import "../../styles/variables.css";
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+
+  margin-top: 20px;
+  background: var(--color-background);
+
+  border-top: solid 1px var(--color-medium-gray);
+}
+
+footer div {
+  width: 100%;
+  max-width: var(--container-width);
+  padding: var(--container-padding);
+  padding: 10px;
+
+  text-align: right;
+}

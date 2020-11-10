@@ -1,0 +1,32 @@
+@import "../../styles/variables.css";
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--color-orange);
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: var(--header-height);
+  width: 100%;
+  max-width: var(--container-width);
+  padding: var(--container-padding);
+  margin: 0 auto;
+}
+
+header div h1 {
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+}
+
+header div nav ul li + li {
+  margin-left: 20px;
+}

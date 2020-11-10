@@ -1,0 +1,56 @@
+@import "./variables.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  font-size: 16px;
+  background-color: var(--color-background);
+}
+
+input,
+select,
+button,
+textarea {
+  font-size: 16px;
+  border: solid 1px var(--color-medium-gray);
+  border-radius: 5px;
+  padding: 3px 10px;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: unset;
+  text-decoration: unset;
+}
+
+a:hover {
+  color: var(--color-blue);
+  /* font-weight: bold; */
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: calc(var(--header-height) + 15px);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: var(--container-width);
+  padding: var(--container-padding);
+}
