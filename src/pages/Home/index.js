@@ -46,7 +46,8 @@ function Home () {
     setEndDate(endFullDate)
 
     const startMonth = date.getMonth().toString().padStart(2, '0');
-    const startFullDate = `${year}-${startMonth}-${day}`
+    const startFullDate = `${startMonth === '00' ? year - 1 : year}-${startMonth === '00' ? '12' : startMonth}-${day}`
+    console.log(startFullDate)
 
     setStartDate(startFullDate)
   }, [])
@@ -66,7 +67,7 @@ function Home () {
         else setSymbols(response)
       })
   }, [])
-  
+
   return (
     <main>
       <div className="container">
@@ -76,11 +77,11 @@ function Home () {
 
         <ul className="home-choose-date">
           <li>
-            <label htmlFor="start-date">Data de Inicio</label>
+            <label htmlFor="start-date">Data Inicial</label>
             <input type="date" name="start-date" value={startDate} onChange={event => setStartDate(event.target.value)}/>
           </li>
           <li>
-            <label htmlFor="end-date">Data de Inicio</label>
+            <label htmlFor="end-date">Data Final</label>
             <input type="date" name="end-date" value={endDate} onChange={event => setEndDate(event.target.value)}/>
           </li>
           <li>
