@@ -7,7 +7,7 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <Router>
+    <Router basename="exchange_rate">
       <Header />
       <Routes />
       <Footer />
